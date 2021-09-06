@@ -35,13 +35,11 @@ body header a {
 
 @media (min-width: 840px) {
   body main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
   }
 }
 
@@ -57,8 +55,14 @@ body main section#card {
 
 @media (min-width: 840px) {
   body main section#card {
-    margin-right: 10%;
-    padding: 5%;
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 1em;
   }
 }
 
@@ -66,13 +70,6 @@ body main section#card ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: 840px) {
-  body main section#card ul {
-    margin-top: 10%;
-    margin-left: 30%;
-  }
 }
 
 body main section#card ul li {
@@ -100,10 +97,26 @@ body main section#primary {
   text-align: center;
 }
 
+@media (min-width: 840px) {
+  body main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
+}
+
 body main section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  body main section#primary h1 {
+    width: 30%;
+    font-seize: 4em;
+    line-height: .9em;
+  }
 }
 
 body main section#primary p {
@@ -124,17 +137,8 @@ body main section#primary a {
 
 @media (min-width: 840px) {
   body main section#primary a {
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: inline;
-    margin: 50px 0;
-  }
-}
-
-@media (min-width: 840px) {
-  body main section#primary {
-    text-align: left;
-    margin-left: 5%;
+    display: inline-block;
+    padding: 15px 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */
