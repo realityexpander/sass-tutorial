@@ -19,7 +19,7 @@ $colors: (
   accent: #FFF6BB
 );
 
-$padding: 15px;
+$padding: 10px;
 $borders: 15px;
 
 body, html {
@@ -39,7 +39,7 @@ body {
     z-index: -1;
 
     @include desktop {
-      clip-path: polygon(0 0, 73% 0, 38% 99%, 0% 100%);
+      clip-path: polygon(0 0, 73% 0, 51% 100%, 0% 100%);
     }
   }
 
@@ -89,7 +89,7 @@ body {
             height: 30px;
             border-radius: 50%;
             background-color: color(primary-light);
-            margin-right: 10px;
+            margin-right: 20px;
           }
 
           strong {
@@ -113,13 +113,13 @@ body {
       }
 
       h1 {
-        font-size: 3em;
+        font-size: 4em;
         margin-top: 10px;
         text-transform: uppercase;
 
         @include desktop {
           width: 30%;
-          font-seize: 4em;
+          font-size: 3em;
           line-height: .9em;
         }
       }

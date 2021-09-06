@@ -20,15 +20,15 @@ body #bg {
 
 @media (min-width: 840px) {
   body #bg {
-    -webkit-clip-path: polygon(0 0, 73% 0, 38% 99%, 0% 100%);
-            clip-path: polygon(0 0, 73% 0, 38% 99%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 73% 0, 51% 100%, 0% 100%);
+            clip-path: polygon(0 0, 73% 0, 51% 100%, 0% 100%);
   }
 }
 
 body header a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   display: block;
   text-transform: uppercase;
 }
@@ -45,7 +45,7 @@ body header a {
 
 body main section#card {
   background: #fff;
-  padding: 20px;
+  padding: 15px;
   margin: 1em auto;
   border-radius: 15px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -82,7 +82,7 @@ body main section#card ul li span {
   height: 30px;
   border-radius: 50%;
   background-color: #ccdfff;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 body main section#card ul li strong {
@@ -93,7 +93,7 @@ body main section#card ul li strong {
 
 body main section#primary {
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ body main section#primary {
 }
 
 body main section#primary h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-top: 10px;
   text-transform: uppercase;
 }
@@ -114,7 +114,7 @@ body main section#primary h1 {
 @media (min-width: 840px) {
   body main section#primary h1 {
     width: 30%;
-    font-seize: 4em;
+    font-size: 3em;
     line-height: .9em;
   }
 }
@@ -129,7 +129,7 @@ body main section#primary a {
   text-transform: uppercase;
   background-color: #FFF6BB;
   color: #001333;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   display: block;
   margin: 50px auto 0 auto;
@@ -138,7 +138,7 @@ body main section#primary a {
 @media (min-width: 840px) {
   body main section#primary a {
     display: inline-block;
-    padding: 15px 60px;
+    padding: 10px 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
